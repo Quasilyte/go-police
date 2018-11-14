@@ -1,0 +1,6 @@
+{
+    "AltImport": {
+        "errors": "fmt.Errorf",
+        "path": "path/filepath package"
+    }
+}
