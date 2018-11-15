@@ -16,7 +16,7 @@ func init() {
 	info.Before = `import "errors"`
 	info.After = `import "github.com/foobar/errors"`
 
-	lintpack.AddChecker(&info, func(ctx *lintpack.CheckerContext) lintpack.FileWalker {
+	collection.AddChecker(&info, func(ctx *lintpack.CheckerContext) lintpack.FileWalker {
 		requireConfig()
 		return &altImportChecker{
 			ctx:   ctx,
