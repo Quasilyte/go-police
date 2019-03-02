@@ -12,7 +12,7 @@ func init() {
 	var info lintpack.CheckerInfo
 	info.Name = "altImport"
 	info.Tags = []string{"style"}
-	info.Summary = "Detect discouraged imports and propose an alternative"
+	info.Summary = "Detect discouraged imports and proposes an alternative"
 	info.Before = `import "errors"`
 	info.After = `import "github.com/foobar/errors"`
 
